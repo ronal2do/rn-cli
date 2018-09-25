@@ -1,0 +1,34 @@
+{
+  "name": "rn-cli",
+  "version": "0.0.1",
+  "description": "Create everything faster ~~> Apollo, Relay, Jest, Redux, MobX, Detox, TSX, Flow, React-Navigation, Context",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronal2do/rn-cli.git"
+  },
+  "keywords": [
+    "CLI",
+    "Redux",
+    "Apollo",
+    "Relay",
+    "React",
+    "React-Native",
+    "Jest",
+    "TypeScript"
+  ],
+  "author": "ronal2do@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ronal2do/rn-cli/issues"
+  },
+  "homepage": "https://github.com/ronal2do/rn-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "inquirer": "^6.2.0"
+  }
+}

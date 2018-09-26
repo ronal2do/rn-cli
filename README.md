@@ -5,7 +5,7 @@ Create everything faster :smirk: ~~> Apollo, Relay, Jest, Redux, MobX, Detox, TS
 
 ![rn-cli](./assets/rocks.gif)
 
-> This tool is it to gain time on first setup of your app, All dependencies is the leatest release using theirs cli.
+> This tool is it to gain time on the first setup of your app, All dependencies are the latest release using theirs cli.
 
 ## Table of contents 
 1. [Usage](#usage)
@@ -13,7 +13,7 @@ Create everything faster :smirk: ~~> Apollo, Relay, Jest, Redux, MobX, Detox, TS
 1. [Tips](#tips)
 1. [Request your feature](#request-your-feature)
 1. [Todo list](#todo-list)
-1. [All contributors](#all-contributors)
+1. [Contributors](#contributors)
 1. [Credits](#credits)
 
 ## Usage
@@ -39,7 +39,9 @@ gif?
 1. React-Navigation
 
 ## Todo list
-- [ ] MobX    
+- [ ] Gifs, demonstrating how it works   
+- [ ] Tips   
+- [ ] MobX   
 - [ ] Docz  
 - [ ] Storybook    
 - [ ] Relay-Modern  
@@ -49,11 +51,11 @@ gif?
 - [ ] Facebook-sdk?   
 - [ ] Firebase push notifications? 
 
-## All contributors
+## Tips
 
 
 ## Request your feature
-Avebory is free to request a feature and all PR is welcome
+Everybody's free to request a feature [here](https://github.com/ronal2do/rn-cli/issues/1)
 
 ## Credits
 ## Contributors

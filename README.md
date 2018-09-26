@@ -1,5 +1,6 @@
 # rn-cli 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
 Create everything faster :smirk: ~~> Apollo, Relay, Jest, Redux, MobX, Detox, TSX, Flow, React-Navigation, Context
 
 ![rn-cli](./assets/rocks.gif)
@@ -42,7 +43,7 @@ gif?
 - [ ] Docz  
 - [ ] Storybook    
 - [ ] Relay-Modern  
-- [ ] Jsshint   
+- [ ] Jscodeshift 
 - [ ] Detox  
 - [ ] Tests  
 - [ ] Facebook-sdk?   
@@ -61,7 +62,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/4389565?v=4" width="100px;"/><br /><sub><b>Ronaldo Lima</b></sub>](http://stqpublicidade.com.br/)<br />[📖](https://github.com/ronal2do/rn-cli/commits?author=ronal2do "Documentation") |
+| [<img src="https://avatars3.githubusercontent.com/u/4389565?v=4" width="100px;"/><br /><sub><b>Ronaldo Lima</b></sub>](https://github.com/ronal2do)<br />[📖](https://github.com/ronal2do/rn-cli/commits?author=ronal2do "Documentation") [💻](https://github.com/ronal2do/rn-cli/commits?author=ronal2do "Code") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 

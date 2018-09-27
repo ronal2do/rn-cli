@@ -10,8 +10,6 @@ module.exports = {
     console.log(chalk.hex('#cb00ff')('Installing React Navigation'))
     execSync(`cd ${name} && ${manager === 'npm' ? 'npm install --save ' : 'yarn add '} react-navigation`, { stdio: [0, 1, 2] })
     execSync(`cd ${name} && mkdir -p src/router`)
-
-    console.log(chalk.hex('#cb00ff')('Generating files'))
     fs.writeFileSync(path.join(root, 'src/screens/HomeScreen.js'), navigation.homeScreen)
     fs.writeFileSync(path.join(root, 'src/screens/SettingsScreen.js'), navigation.settingsScreen)
     fs.writeFileSync(path.join(root, 'src/router/index.js'), navigation.bottomTab)

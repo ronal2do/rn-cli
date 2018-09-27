@@ -6,10 +6,8 @@ const execSync = require('child_process').execSync
 module.exports = {
   addSupport: (root, name, manager) => {
 
-    console.log(chalk.hex('#cb00ff')('Installing Apollo'))
+    console.log(chalk.hex('#cb00ff')('Installing Apollo...'))
     execSync(`cd ${name} && ${manager === 'npm' ? 'npm install --save ' : 'yarn add '} apollo-boost react-apollo graphql graphql-tag`, { stdio: [0, 1, 2] })
-
-    console.log(chalk.hex('#cb00ff')('Writting files'))
     fs.unlinkSync(path.join(root, 'index.js'))
 
     fs.writeFileSync(path.join(root, 'index.js'), `import * as React from 'react'

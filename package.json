@@ -1,5 +1,5 @@
 {
-  "name": "rn-cli",
+  "name": "rn-cli-generator",
   "version": "0.0.1",
   "description": "Create everything faster ~~> Apollo, Relay, Jest, Redux, MobX, Detox, TSX, Flow, React-Navigation, Context",
   "main": "index.js",
@@ -26,6 +26,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ronal2do/rn-cli/issues"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "rn-cli": "./index.js"
   },
   "homepage": "https://github.com/ronal2do/rn-cli#readme",
   "dependencies": {

@@ -8,8 +8,6 @@ module.exports = {
 
     console.log(chalk.hex('#cb00ff')('Installing Redux dependencies...'))
     execSync(`cd ${name} && ${manager === 'npm' ? 'npm install --save ' : 'yarn add '} redux react-redux redux-thunk`, { stdio: [0, 1, 2] })
-
-    console.log(chalk.hex('#cb00ff')('Generating folders...'))
     execSync(`cd ${name} && mkdir -p src/reducers`)
 
     console.log(chalk.hex('#cb00ff')('Generating files...'))

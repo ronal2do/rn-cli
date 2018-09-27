@@ -43,7 +43,7 @@ const questions = [
   {
     name: 'state',
     type: 'list',
-    message: 'Add Redux?: ',
+    message: 'State-Machine with Redux? ',
     choices: ['yes', 'no'],
     default: 'no'
   },
@@ -64,7 +64,7 @@ const questions = [
 ]
 
 program
-  .version('1.0.0')
+  .version('0.0.1')
   .description('React-Native Boilerplate Generator')
 
 program
@@ -94,12 +94,9 @@ program
             console.log(chalk.hex('#cb00ff')(`Generating ${name} using the Native CLI`))
             console.log(chalk.hex('#cb00ff')(`Installing dependencies. This could take a while...`))
             execSync(`create-react-native-app ${name}`, { stdio: [0, 1, 2] })
-
             console.log(blank)
             readline.cursorTo(process.stdout, 0, 0)
             readline.clearScreenDown(process.stdout)
-
-            console.log(chalk.hex('#cb00ff')('Generating folder structure...'))
             execSync(`cd ${name} && mkdir -p src/assets src/components src/views src/services src/config`)
           }
 
@@ -115,8 +112,7 @@ program
             }
             readline.cursorTo(process.stdout, 0, 0)
             readline.clearScreenDown(process.stdout)
-
-            console.log(chalk.hex('#cb00ff')('Generating folder structure...'))
+            execSync(`cd ${name} && yarn add --dev @babel/core @babel/runtime`) // to fix lattest rn issue
             execSync(`cd ${name} && mkdir -p src/screens src/config && touch src/screens/HomeScreen.js`)
           }
 
@@ -131,17 +127,16 @@ program
 
           if (navigation === 'yes') {
             navigationCli.addSupport(root, name, state, manager)
-            console.log(chalk.hex('#cb00ff').bold('adding react-navigation!\n'))
           }
 
           if (graphql === 'yes') {
             apolloCli.addSupport(root, name, state, manager)
-            console.log(chalk.hex('#cb00ff').bold('adding apollo!\n'))
           }
-
+          // https://github.com/facebook/react-native/issues/21168
+          // https://github.com/facebook/react-native/issues/20774
+          // cd node_modules/react-native/React/..; exec ./scripts/ios-install-third-party.sh
+          execSync(`cd ${name}/node_modules/react-native/React/..; exec ./scripts/ios-install-third-party.sh`)
           console.log(chalk.hex('#cb00ff').bold('Finished!, Thank you for using rn-cli!\n'))
-
-          docs.readme(root, name)
           process.exit(1)
         }
       })
